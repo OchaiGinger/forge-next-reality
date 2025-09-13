@@ -22,10 +22,15 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+           <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="font-orbitron font-bold text-2xl text-primary hover:text-primary-glow transition-colors">
-            Metaforge_XR
+          <Link to="/" className="flex items-center space-x-2 font-orbitron font-bold text-2xl text-primary hover:text-primary-glow transition-colors">
+            <img
+              src="/meta forge xr.png" // If in public folder
+              alt="Metaforge XR Logo"
+              className="w-10 h-auto"
+            />
+            <span>Metaforge_XR</span>
           </Link>
 
           {/* Desktop Navigation */}

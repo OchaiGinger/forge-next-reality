@@ -7,6 +7,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-2">
+            {/* Logo */}
+            <img
+              src="/meta forge xr.png" // If in public folder
+              alt="Metaforge XR Logo"
+              className="mb-4 w-32 h-auto"
+            />
             <h3 className="font-orbitron font-bold text-xl text-primary mb-4">
               Metaforge_XR
             </h3>
