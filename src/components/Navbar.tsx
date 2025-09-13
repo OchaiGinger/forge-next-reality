@@ -13,7 +13,7 @@ const Navbar = () => {
     { label: "Platform", path: "/platform" },
     { label: "Why Us", path: "/why-us" },
     { label: "Services", path: "/services" },
-    { label: "Team & Testimonials", path: "/team" },
+    { label: "Team", path: "/team" },
     { label: "Contact", path: "/contact" },
   ];
 

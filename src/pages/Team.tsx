@@ -3,41 +3,46 @@ import { Linkedin, Award, Users, Target } from "lucide-react";
 import ceoProfile from "@/assets/ceo-profile.jpg";
 
 const Team = () => {
-  const teamMembers = [
+   const teamMembers = [
     {
       name: "Catherine Erdoo Esihe",
       role: "Chief Executive Officer",
-      image: ceoProfile,
+      image: "ceoProfile",
       description: "Visionary leader with 15+ years in industrial technology and XR innovation. Pioneer in bringing immersive solutions to Nigerian industries.",
       expertise: ["Industrial IoT", "XR Strategy", "Business Development"]
     },
     {
       name: "Dr. Adebayo Okonkwo",
       role: "Chief Technology Officer",
+      image: "adebayo.png",
       description: "Former Microsoft engineer specializing in mixed reality and AI systems. PhD in Computer Vision from University of Lagos.",
       expertise: ["Mixed Reality", "Computer Vision", "Machine Learning"]
     },
     {
       name: "Amara Nwosu",
       role: "Head of Product Development",
+      image: "amara.png",
       description: "Product strategist with expertise in user experience design for industrial applications and AR interface development.",
       expertise: ["UX Design", "Product Strategy", "AR Interfaces"]
     },
     {
       name: "Kemi Adebola",
       role: "VP of Engineering",
+      image: "kemi.png",
       description: "Full-stack developer and systems architect with experience building scalable industrial IoT platforms and edge computing solutions.",
       expertise: ["IoT Architecture", "Edge Computing", "Cloud Systems"]
     },
     {
       name: "Chidi Okwu",
       role: "Head of Sales & Partnerships",
+      image: "chidi.png",
       description: "Industrial sales expert with deep connections across Nigeria's manufacturing, oil & gas, and utilities sectors.",
       expertise: ["B2B Sales", "Partnership Development", "Industry Relations"]
     },
     {
       name: "Fatima Ibrahim",
       role: "Lead AI Researcher",
+      image: "fatima.png",
       description: "Machine learning specialist focused on predictive maintenance algorithms and industrial automation systems.",
       expertise: ["Predictive Analytics", "Deep Learning", "Industrial AI"]
     }
@@ -150,8 +155,12 @@ const Team = () => {
                 className="bg-card border-card-border shadow-card hover:shadow-elevated hover:border-primary/30 transition-all duration-300"
               >
                 <CardContent className="p-8 text-center">
-                  <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center">
-                    <Users className="w-12 h-12 text-primary" />
+                  <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-2 border-primary flex items-center justify-center">
+                    <img 
+                      src={member.image} 
+                      alt={member.name}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <h3 className="font-orbitron font-bold text-xl text-foreground mb-2">
                     {member.name}
